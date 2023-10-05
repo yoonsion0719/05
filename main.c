@@ -7,21 +7,19 @@ int main(int argc, char *argv[]) {
 	
 	int input_;
 	
-	printf("정수를 입력하시오 : ");
-	scanf("%i", &input_);
+	printf("정수 하나를 입력하시오 : ");
+	scanf("%d", &input_);
 	
-	if (input_>0)
+	if (input_>=0)
 	{
-		printf("양수입니다.");
-	}
-	else if (input_<0)
-	{
-		printf("음수입니다.");
-	}
+		printf("절대값은 %d 입니다.\n", input_);
+	 } 
+	
 	else
 	{
-		printf("0 입니다.");
+		printf("절대값은 %d 입니다.\n", -input_);
 	}
 	
+	system("PAUSE");
 	return 0;
 }
